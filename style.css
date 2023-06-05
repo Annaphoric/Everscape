@@ -1,0 +1,693 @@
+
+.button {
+    width: 8rem;
+    border: 0.2rem solid #000;
+    border-radius: 10%;
+  }
+  
+  .dialogue {
+    display: none;
+    background: #EEE;
+    opacity: 0.9;
+    position: absolute;
+    top: 22.7rem;
+    box-sizing: border-box;
+    width: 45.2rem;
+    height: 10.5rem;
+    padding: 0.5rem;
+    border: 0.2rem solid #000;
+    border-radius: 5%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000;
+  }
+  
+  .continue {
+    position: absolute;
+    top: 7rem;
+    left: 32rem;
+    background: #AAA;
+    height: 3rem;
+    width: 9rem;
+    border: 0.2rem solid #000;
+    border-radius: 10%;
+  }
+  
+  label {
+    font-size: 1.3rem;
+    color: #320;
+  }
+  
+  .text {
+    height: 1.5rem;
+    width: 10rem;
+  }
+  
+  .window {
+    position: absolute;
+    height: 33rem;
+    width: 60.5rem;
+    text-align: center;
+  }
+  
+  #welcomeWindow {
+    background: #484;
+  }
+  
+  #title {
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 0.3rem 0.3rem 0.5rem #444;
+  }
+  
+  .welcomeButton {
+    display: table;
+    background: #866;
+    float: left;
+    position: relative;
+    bottom: 3rem;
+    left: 10rem;
+    margin: 2rem;
+    height: 10rem;
+    width: 16rem;
+    color: #EEE;
+    font-weight: 700;
+    font-size: 2rem;
+    border: 0.3rem solid #220;
+    border-radius: 25%;
+    text-align: center;
+  }
+  
+  .welcomeButtonText {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  #checkGame {
+    display: none;
+    position: relative;
+    left: 15rem;
+    bottom: 5rem;
+    height: 10rem;
+    width: 30rem;
+  }
+  
+  #enterWindow {
+    display: table;
+    background: #653;
+    cursor: wait;
+  }
+  
+  #caption {
+    display: table-cell;
+    /* //background: #020; */
+    /* //border-radius: 10%; */
+    color: #BCC;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-shadow: 0.3rem 0.3rem 0.5rem #444;
+    vertical-align: middle;
+  }
+  
+  #frame {
+    display: none;
+    position: absolute;
+    left: 1.5rem;
+    top: 30rem;
+    color: #FFF;
+  }
+  
+  .allyDialogue {
+    margin-bottom: 0.3rem;
+    color: #0A0;
+  }
+  
+  .enemyDialogue {
+    margin-bottom: 0.3rem;
+    color: #800;
+  }
+  
+  #d1Window {
+    display: none;
+    background: #474;  
+  }
+  
+  #dialogue1 {
+    display: none;
+    background: #CCC;
+    position: relative;
+    left: 10rem;
+    top: 4rem;
+    padding: 1.5rem;
+    width: 20rem;
+    height: 10rem;
+    border: 0.2rem solid #000;
+    border-radius: 10%;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: justify;
+    overflow: auto;
+    word-wrap: break-word;
+  }
+  
+  #nextButton {
+    display: none;
+    position: relative;
+    left: 8.5rem;
+    color: #000;
+    background: #AAA;
+    height: 3rem;
+    width: 9rem;
+  }
+  
+  #nameChoice {
+    position: relative;
+    top: 5rem;
+    right: 7rem;
+  }
+  
+  #classChoice {
+    position: relative;
+    top: 8rem;
+    left: 11rem; 
+    font-size: 2rem;
+    text-align: left;
+  }
+  
+  .submitButton {
+    background: #AAA;
+    margin: 1.5rem;
+    height: 3rem;
+    width: 8rem;
+    color: #000;
+  }
+  
+  #mainWindow {
+    display: none;
+    background: #9A4;
+  }
+  
+  #grid {
+    display: none;
+    background: rgba(210, 210, 230, 0.3);
+    position: relative;
+    width: 45.1rem;
+    height: 21rem;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  #grid tr td {
+    width: 4.185rem;
+    height: 3.2rem;
+    border: 0.1rem solid #000;
+    hyphens: auto;
+    overflow: auto;
+    word-wrap: break-word;
+    cursor: pointer;
+  }
+  
+  #grid tr td:hover {
+    background: #AA8;
+    opacity: 0.7;
+    filter: brightness(200%);
+  }
+  
+  #splat {
+    background: #FFF;
+    position: relative;
+    margin-left: 1.5rem;
+    height: 1.1rem;
+    width: 1.1rem;
+    border: 0.1rem solid #000;
+    border-radius: 50%;
+    color: #000;
+    z-index: 2;
+  }
+  
+  #bars {
+    display: none;
+    background: #CBA;
+    position: relative;
+    width: 44.9rem;
+    height: 1.5rem;
+    border: 0.1rem solid #000;
+  }
+  
+  .bar {
+    background: #CCC;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    margin-right: 1.2rem;
+    width: 6.5rem;
+    height: 1.1rem;
+    border: 0.1rem solid #000;
+    border-radius: 5%;
+  }
+  
+  .barNumber {
+    display: inline-block;
+    position: absolute;
+    right: 1.85rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .barValue {
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 1rem;
+    border-radius: inherit;
+    width: inherit;
+  }
+  
+  .barLabel {
+    position: relative;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  
+  #health {
+    background: #F00;
+  }
+  
+  #mana {
+    background: #08F;
+  }
+  
+  #xp {
+    width: 0;
+    background: #8F0;
+  }
+  
+  #mode {
+    display: inline-block;
+    background: #000;
+    position: relative;
+    padding-bottom: 0.2rem;
+    width: 5.5rem;
+    height: 0.8rem;
+    border: 0.1rem dashed #210;
+    border-radius: 5%;
+    color: #FFF;
+  }
+  
+  #chatbox {
+    display: none;
+    background: rgba(150, 150, 200, 0.8);
+    position: relative;
+    bottom: 1.1rem;
+    height: 10.2rem;
+    width: 42.4rem;
+    border: 0.1rem solid #000;
+    font-size: 1.1rem;
+    text-align: left;
+    overflow: auto;
+    word-wrap: break-word;
+    list-style-type: none;
+  }
+  
+  #chatbox li {
+    box-sizing: border-box;
+    padding: 0.2rem;
+  }
+  
+  .chat {
+    color: #EE0;
+  }
+  
+  .damage {
+    color: #DD0;
+  }
+  
+  .reward {
+    color: #080;
+  }
+  
+  .allyDeath {
+    color: #800;
+  }
+  
+  .death {
+    color: #842;
+  }
+  
+  .bossDeath {
+    color: #D0D;
+  }
+  
+  #menu {
+    display: none;
+    background: rgba(200, 170, 150, 0.8);
+    float: right;
+    border: 0.1rem solid #000;
+    width: 15.2rem;
+    height: 32.9rem;
+  }
+  
+  .menuButton {
+    position: relative;
+    background: #841;
+    height: 4rem;
+    width: 11.4rem;
+    margin-top: 0.6rem;
+    border-radius: 20%;
+    color: #CCC;
+    font-size: 1.4rem;
+    z-index: 2;
+  }
+  
+  #attack {
+    color: #F66;
+  }
+  
+  #move {
+    color: #8AE;
+  }
+  
+  #interact {
+    color: #9E5;
+  }
+  
+  #attack:hover, #move:hover, #examine:hover {
+    color: #EE4;
+    filter: brightness(120%);
+  }
+  
+  #view {
+    display: none;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 12rem;
+    box-sizing: border-box;
+    width: 45.1rem;
+    height: 21rem;
+    padding: 2rem;
+    border: 0.2rem solid #000;
+    border-radius: 5%;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .interface {
+    position: absolute;
+  }
+  
+  #inventoryView {
+    right: 0.01rem;
+    width: inherit;
+    height: 18.5rem;
+  }
+  
+  #stacks {
+    width: 45rem;
+    border-bottom: 0.2rem solid #000;
+    font-size: 1.05rem;
+  }
+  
+  .column {
+    display: inline-block;
+    background: #B84;
+    opacity: 0.95;
+    position: relative;
+    width: 8.5rem;
+    border-left: 0.1rem solid #000;
+    border-right: 0.1rem solid #000;
+    border-radius: 5%;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .columnLabel {
+    position: relative;
+    background: #542;
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid black;
+    border-radius: 5%;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  .column ul {
+    position: absolute;  
+    width: inherit;
+    list-style-type: none;
+    hyphens: auto;
+    overflow: auto;
+    word-wrap: break-word;
+  }
+  
+  .column ul li {
+    background: #BBB;
+    position: relative;
+    right: 2.5rem;
+    width: inherit;
+    box-sizing: border-box;
+    padding-left: 0.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 0.05rem solid #000;
+    text-align: left;
+    z-index: 2;
+  }
+  
+  .column ul li:hover {
+    background: #111;
+    cursor: pointer;
+    color: #EE4;
+    filter: brightness(120%);
+  }
+  
+  #itemInfo {
+    right: 0.05rem;
+    top: 20.5rem;
+    width: inherit;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  
+  .manageItem {
+    position: absolute;
+    height: inherit;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  
+  #itemOptions input {
+    background: #642;
+    position: relative;
+    left: 25rem;
+    margin-top: 0.4rem;
+    height: 4rem;
+    width: 10rem;
+    color: #EEE;
+    border: 0.2rem solid #000;
+    border-radius: 10%;
+    font-size: 1.5rem;
+  }
+  
+  #examineItem {
+    padding-left: 1rem;
+    bottom: 0.05rem;
+  }
+  
+  #characterView {
+    width: inherit;
+  }
+  
+  .status {
+    display: inline-block;
+    position: relative;
+    right: 22rem;
+    box-sizing: border-box;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    bottom: 2rem;
+    width: 14.2rem;
+    height: 21rem;
+    float: left; 
+    border: 0.2rem solid #000;
+    border-radius: 10%;
+    text-align: center;
+  }
+  
+  .status p {
+    padding-left: 0.7rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  .statusCaption {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+  /*
+  #effects li, {
+    padding-left: 0.7rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+  }
+  */
+  #equipment p, #bonuses p {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+  
+  #mapView {
+    position: relative;
+    width: inherit;
+  }
+  
+  #worldMap {
+    background: #864;
+    position: relative;
+    bottom: 2rem;
+    right: 2rem;
+    box-sizing: border-box;
+    right: 2.1rem;
+    width: inherit;
+    height: 4rem;
+    border: 0.2rem solid #4AA;
+    border-radius: 5%;
+  }
+  
+  #current {
+    display: inline-block;
+    float: right;
+    margin-top: 0.7rem;
+    margin-left: 3rem;
+    width: 17rem;
+    font-size: 1rem;
+    text-align: left;
+    color: #EEE;
+  }
+  
+  #travel {
+    background: #AAA;
+    float: right;
+    box-sizing: inherit;
+    margin-top: 0.2rem;
+    margin-right: 0.3rem;
+    width: 7rem;
+    height: 2.8rem;
+    font-size: 1.1rem;
+    border: 0.1rem solid #000;
+    border-radius: 10%;
+  }
+  
+  #regionList {
+    float: right;
+    height: 2.5rem;
+  }
+  
+  #area {
+    background: #8A4;
+    opacity: 0.8;
+    position: relative;
+    bottom: 2rem;
+    right: 2.1rem;
+    width: inherit;
+    height: 16.8rem;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  #area tr td {
+    width: 5rem;
+    height: 2.1rem;
+    box-sizing: border-box;
+    border: 0.1rem solid #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    hyphens: auto;
+    overflow: auto;
+    word-wrap: break-word;
+    cursor: pointer;
+  }
+  
+  #area tr td:hover {
+    background: #AA8;
+    opacity: 0.9;
+    filter: brightness(200%);
+    color: #AA2;
+  }
+  
+  #optionsView {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  #optionsView input {
+    height: 3rem;
+    width: 12rem;
+    font-size: 1.3rem;
+    border-radius: 5%;
+  }
+  
+  #levelUp {
+    position: relative;
+  }
+  
+  #dialogue2 {
+    font-size: 1.4rem;
+  }
+  
+  .object {
+    color: #743;
+  }
+  
+  .ally {
+    color: #0F0;
+  }
+  
+  .enemy {
+    color: #F00;
+  }
+  
+  .water {
+    background: #08E;
+    color: #EEE;
+  }
+  
+  .fire {
+    background: #E00;
+    color: #EEE;
+  }
+  
+  .wall {
+    background: #222;
+    color: #EEE;
+  }
+  
+  .travel {
+    background: #EE4;
+  }
+  
+  .loot {
+    background: #8F8;
+  }
+  
+  .water:hover, .fire:hover, .wall:hover {
+    color: #000;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    color: #EE4;
+    filter: brightness(120%);
+  }
